@@ -1,0 +1,23 @@
+{
+  "name": "@cloud-flow/sdk",
+  "version": "1.0.0",
+  "description": "Cloud Flow 云函数客户端SDK",
+  "main": "./out/index.js",
+  "typings": "./out/typings/index.d.ts",
+  "repository": "https://github.com/SongshuA/cloud-flow-sdk",
+  "author": "jarryruan",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn clear && mkdir -p out && cross-env NODE_ENV=production tsc -p .",
+    "clear": "rm -rf ./out/*"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
