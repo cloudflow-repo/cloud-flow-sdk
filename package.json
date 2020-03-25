@@ -9,15 +9,20 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "prepublish": "yarn build",
     "build": "yarn clear && mkdir -p out && cross-env NODE_ENV=production tsc -p .",
     "clear": "rm -rf ./out/*"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/lodash": "^4.14.149",
     "cross-env": "^7.0.2",
     "tsc": "^1.20150623.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "axios": "^0.19.2",
+    "lodash": "^4.17.15",
+    "query-string": "^6.11.1"
   }
 }
