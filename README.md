@@ -79,7 +79,7 @@ await client.invoke('test', {
 
 ### 快照简介
 
-对于非GET请求云函数，每次都要手动给定 HTTP 选项显然很麻烦，可以通过为云函数创建快照来简化步骤：
+对于非GET请求云函数，每次都要手动给定 HTTP 选项显然很繁琐，可以通过为云函数创建快照来简化步骤：
 
 ```js
 client.createSnapshot('test', {
