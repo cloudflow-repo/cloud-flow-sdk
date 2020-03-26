@@ -2,7 +2,7 @@ import { FnParams, HttpOptions } from "./request";
 import { CloudFlowService } from '../';
 import _ from "lodash";
 
-export type Snapshot = (params?: FnParams) => Promise<any>;
+export type Snapshot = (params?: FnParams) => Promise<any> | any;
 
 export interface SnapshotOptions {
   functionName?: string;
