@@ -1,6 +1,6 @@
 {
   "name": "@cloud-flow/sdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cloud Flow 云函数客户端SDK",
   "main": "./out/index.js",
   "typings": "./out/typings/index.d.ts",
